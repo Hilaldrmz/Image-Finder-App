@@ -1,0 +1,242 @@
+* {
+    outline: none;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #ffd8d8;
+  }
+  
+  .tb {
+    display: table;
+    width: 100%;
+  }
+  
+  .td {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  input,
+  button {
+    color: #e16868;
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+  }
+  
+  #cover {
+    /* position: absolute; */
+    /* top: 15%;
+    left: 0;
+    right: 0;
+    width: 1000px;
+    padding: 35px;
+    margin: -83px auto 0 auto;
+    background-color: #ff7575; */
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
+    transform: scale(0.6);
+  }
+  
+  form {
+    height: 96px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    height: 96px;
+    font-size: 60px;
+    line-height: 1;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #e16868;
+  }
+  
+  #s-cover {
+    width: 1px;
+    padding-left: 35px;
+  }
+  
+  button {
+    position: relative;
+    display: block;
+    width: 84px;
+    height: 96px;
+    cursor: pointer;
+  }
+  
+  #s-circle {
+    position: relative;
+    top: -8px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    border-width: 15px;
+    border: 15px solid #e16868;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+  }
+  
+  button span {
+    position: absolute;
+    top: 68px;
+    left: 43px;
+    display: block;
+    width: 45px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    transform: rotateZ(52deg);
+    transition: 0.5s ease all;
+  }
+  
+  button span:before,
+  button span:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 15px;
+    background-color: #e16868;
+    border-radius: 10px;
+    transform: rotateZ(0);
+    transition: 0.5s ease all;
+  }
+  
+  #s-cover:hover #s-circle {
+    top: -1px;
+    width: 67px;
+    height: 15px;
+    border-width: 0;
+    background-color: #e16868;
+    border-radius: 20px;
+  }
+  
+  #s-cover:hover span {
+    top: 50%;
+    left: 56px;
+    width: 25px;
+    margin-top: -9px;
+    transform: rotateZ(0);
+  }
+  
+  #s-cover:hover button span:before {
+    bottom: 11px;
+    transform: rotateZ(52deg);
+  }
+  
+  #s-cover:hover button span:after {
+    bottom: -11px;
+    transform: rotateZ(-52deg);
+  }
+  #s-cover:hover button span:before,
+  #s-cover:hover button span:after {
+    right: -6px;
+    width: 40px;
+    background-color: #e16868;
+  }
+  
+
+  /* Gallery */
+
+  body {
+    background-color: #ffffff;
+    /* background: linear-gradient(
+      25deg,
+      #fff,
+      #e16868); */
+
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    background-attachment: fixed;
+  }
+  .container {
+    /* max-width: 800px; */
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  }
+
+  .text-center {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+
+  
+  /* .lightbox-gallery div > img {
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  } */
+  
+  /* .lightbox-gallery div {
+    margin: 10px;
+    flex-basis: 180px;
+  } */
+  
+  @media only screen and (max-width: 480px) {
+    .lightbox-gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .lightbox > div {
+      margin-bottom: 10px;
+    }
+  }
+
+  .imagelist-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .25rem;
+  }
+  
+  .column{
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    max-width: 25%;
+    
+  }
+  
+  .column > img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  }
+  
+
+  
+.back-top * {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.back-top:hover *,
+.back-top:active *,
+.back-top:visited * {
+  color: #fff;
+  text-decoration: none;
+}
